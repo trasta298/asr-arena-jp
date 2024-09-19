@@ -1,0 +1,11 @@
+[
+    {
+        "id": "001",
+        "audio_path": "./audio/001.wav",
+        "original_text": "こんにちは",
+        "model_outputs": {
+            "whisper_large_v3": "こんにちは",
+            "reazon_speech_k2_v2": "こんにちは"
+        }
+    }
+]
