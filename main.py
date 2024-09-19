@@ -400,6 +400,7 @@ def asr_arena():
     demo.launch(
         share=False,
         server_name="0.0.0.0",
+        auth=("tokyotech", "siencetokyo"),
     )
 
 
