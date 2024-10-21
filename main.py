@@ -398,8 +398,6 @@ def asr_arena():
                 create_arena("asr")
 
     demo.launch(
-        share=True,
-        server_name="0.0.0.0",
         auth=("tokyotech", "siencetokyo"),
     )
 
