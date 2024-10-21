@@ -1,4 +1,5 @@
 import json
+import os
 import random
 import sqlite3
 import threading
@@ -397,7 +398,9 @@ def asr_arena():
             with gr.TabItem("Japanese ASR"):
                 create_arena("asr")
 
-    demo.launch()
+    demo.launch(
+        auth=(os.getenv("ASR_ARENA_USERNAME", ""), os.getenv("ASR_ARENA_PASSWORD", ""))
+    )
 
 
 if __name__ == "__main__":
