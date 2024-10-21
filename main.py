@@ -397,9 +397,7 @@ def asr_arena():
             with gr.TabItem("Japanese ASR"):
                 create_arena("asr")
 
-    demo.launch(
-        auth=("tokyotech", "siencetokyo"),
-    )
+    demo.launch()
 
 
 if __name__ == "__main__":
