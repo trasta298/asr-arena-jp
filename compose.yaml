@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    env_file:
-      - .env
     tty: true
+    ports:
+      - "5730:5730"
+    volumes:
+      - ./db:/workspace/db

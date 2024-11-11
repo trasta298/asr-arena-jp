@@ -224,7 +224,7 @@ def launch_experiment():
                                     model_a_btn, model_b_btn, next_btn, result_text,
                                     progress_text])
 
-    demo.launch(allowed_paths=["/mnt/d/dataset/SRC4VC_ver1"])
+    demo.launch(server_port=5730, server_name="0.0.0.0")
 
 
 if __name__ == "__main__":
