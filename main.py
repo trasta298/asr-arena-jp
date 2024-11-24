@@ -77,8 +77,8 @@ def launch_experiment():
             gr.Markdown("# 🎙️ 音声文字起こし評価実験")
             with gr.Row():
                 with gr.Column():
-                    user_id = gr.Number(label="ユーザーID（1-20）",
-                                        minimum=1, maximum=20, step=1,
+                    user_id = gr.Number(label="ユーザーID（1-25）",
+                                        minimum=1, maximum=25, step=1,
                                         value=1)
                     password = gr.Textbox(label="パスワード", type="password")
                     login_btn = gr.Button("ログイン", variant="primary")
@@ -90,11 +90,11 @@ def launch_experiment():
         def login(user_id, password):
             correct_password = "experiment2024"
 
-            if not user_id or user_id < 1 or user_id > 20:
+            if not user_id or user_id < 1 or user_id > 25:
                 return {
                     experiment_container: gr.update(visible=False),
                     login_container: gr.update(visible=True),
-                    error_msg: gr.update(visible=True, value="❌ ユーザーIDは1から20の間で入力してください。")
+                    error_msg: gr.update(visible=True, value="❌ ユーザーIDは1から25の間で入力してください。")
                 }
 
             if password != correct_password:
