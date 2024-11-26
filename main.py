@@ -5,6 +5,7 @@ import threading
 from datetime import datetime
 
 import gradio as gr
+import pandas as pd
 
 local = threading.local()
 
@@ -60,7 +61,6 @@ def get_next_sample(data, current_index):
 
 def vote_and_record(user_id, audio_id, original_text, model_a, model_b,
                     model_a_output, model_b_output, winner):
-    user_id_int = int(user_id)
     with get_db() as conn:
         c = conn.cursor()
         c.execute("""
@@ -68,10 +68,24 @@ def vote_and_record(user_id, audio_id, original_text, model_a, model_b,
             (user_id, audio_id, original_text, model_a, model_b,
              model_a_output, model_b_output, winner, timestamp)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (user_id_int, audio_id, original_text, model_a, model_b,
+        """, (user_id, audio_id, original_text, model_a, model_b,
               model_a_output, model_b_output, winner,
               datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
         conn.commit()
+
+
+def get_vote_status():
+    with get_db() as conn:
+        df = pd.read_sql_query("""
+            SELECT
+                user_id,
+                COUNT(*) as vote_count,
+                MAX(timestamp) as last_vote
+            FROM votes
+            GROUP BY user_id
+            ORDER BY user_id
+        """, conn)
+        return df.to_dict('records')
 
 
 def launch_experiment():
@@ -91,7 +105,7 @@ def launch_experiment():
             with gr.Row():
                 with gr.Column():
                     user_id = gr.Number(label="ユーザーID（1-25）",
-                                        minimum=1, maximum=25, step=1,
+                                        minimum=0, maximum=25, step=1,
                                         value=1)
                     password = gr.Textbox(label="パスワード", type="password")
                     login_btn = gr.Button("ログイン", variant="primary")
@@ -100,13 +114,50 @@ def launch_experiment():
         # 実験コンテナ（最初は非表示）
         experiment_container = gr.Column(visible=False)
 
+        # 管理者画面コンテナ（最初は非表示）
+        admin_container = gr.Column(visible=False)
+        with admin_container:
+            gr.Markdown("# 👨‍💼 管理者画面")
+            status_table = gr.Dataframe(
+                headers=["ユーザーID", "投票数", "最終投票時刻"],
+                interactive=False
+            )
+            refresh_btn = gr.Button("更新")
+
+            def update_status():
+                vote_status = get_vote_status()
+                data = [[s['user_id'], s['vote_count'], s['last_vote']] for s in vote_status]
+                return data
+
+            refresh_btn.click(
+                fn=update_status,
+                outputs=[status_table]
+            )
+
+            # 初期データを読み込む
+            demo.load(
+                fn=update_status,
+                outputs=[status_table]
+            )
+
         def login(user_id, password):
             correct_password = "experiment2024"
+            admin_password = "admin2024"  # 管理者用パスワード
+
+            if not user_id and password == admin_password:
+                # 管理者モード
+                return {
+                    experiment_container: gr.update(visible=False),
+                    login_container: gr.update(visible=False),
+                    admin_container: gr.update(visible=True),
+                    error_msg: gr.update(visible=False)
+                }
 
             if not user_id or user_id < 1 or user_id > 25:
                 return {
                     experiment_container: gr.update(visible=False),
                     login_container: gr.update(visible=True),
+                    admin_container: gr.update(visible=False),
                     error_msg: gr.update(visible=True, value="❌ ユーザーIDは1から25の間で入力してください。")
                 }
 
@@ -114,25 +165,37 @@ def launch_experiment():
                 return {
                     experiment_container: gr.update(visible=False),
                     login_container: gr.update(visible=True),
+                    admin_container: gr.update(visible=False),
                     error_msg: gr.update(visible=True, value="❌ パスワードが正しくありません。")
                 }
 
-            # ログイン成功
             return {
                 experiment_container: gr.update(visible=True),
                 login_container: gr.update(visible=False),
+                admin_container: gr.update(visible=False),
                 error_msg: gr.update(visible=False)
             }
 
         login_btn.click(
             login,
             inputs=[user_id, password],
-            outputs=[experiment_container, login_container, error_msg]
+            outputs=[experiment_container, login_container, admin_container, error_msg]
         )
 
         # 実験インターフェースを実験コンテナ内に配置
         with experiment_container:
             def init_experiment(user_id_value, state):
+                # 管理者モードの場合は空の値を返す
+                if not user_id_value:
+                    return {
+                        session_state: state,
+                        audio: gr.update(value=None),
+                        model_a_output: "",
+                        model_b_output: "",
+                        progress_text: "",
+                        user_header: ""
+                    }
+
                 user_id_int = int(user_id_value)
                 state = state.copy()  # 状態のコピーを作成
                 state["user_data"] = load_user_data(user_id_int)
@@ -173,12 +236,12 @@ def launch_experiment():
             next_btn = gr.Button("➡️ 次の音声へ", size="lg", variant="secondary", visible=False)
             result_text = gr.Markdown(visible=False)
 
-            def vote_and_show_next(choice, state):
+            def vote_and_show_next(choice, state, user_id_value):
                 if not state["sample"] or not state["model_a"] or not state["model_b"]:
                     return None
                 winner = state["model_a"] if choice == "A" else state["model_b"]
                 vote_and_record(
-                    int(user_id.value), state["sample"]["id"], state["sample"]["original_text"],
+                    user_id_value, state["sample"]["id"], state["sample"]["original_text"],
                     state["model_a"], state["model_b"],
                     state["sample"]["model_outputs"][state["model_a"]],
                     state["sample"]["model_outputs"][state["model_b"]],
@@ -234,11 +297,11 @@ def launch_experiment():
                                      progress_text, user_header])
 
             model_a_btn.click(fn=vote_and_show_next,
-                              inputs=[gr.State("A"), session_state],
+                              inputs=[gr.State("A"), session_state, user_id],
                               outputs=[session_state, model_a_btn, model_b_btn, next_btn, result_text])
 
             model_b_btn.click(fn=vote_and_show_next,
-                              inputs=[gr.State("B"), session_state],
+                              inputs=[gr.State("B"), session_state, user_id],
                               outputs=[session_state, model_a_btn, model_b_btn, next_btn, result_text])
 
             next_btn.click(fn=load_next_sample,
