@@ -8,10 +8,14 @@ import gradio as gr
 
 local = threading.local()
 
+# データベース接続用のロックを追加
+db_lock = threading.Lock()
+
 
 def get_db():
     if not hasattr(local, "db"):
-        local.db = sqlite3.connect('db/experiment.db', check_same_thread=False)
+        with db_lock:
+            local.db = sqlite3.connect('db/experiment.db', check_same_thread=False)
     return local.db
 
 
@@ -72,6 +76,15 @@ def vote_and_record(user_id, audio_id, original_text, model_a, model_b,
 
 def launch_experiment():
     with gr.Blocks(title="音声文字起こし評価実験") as demo:
+        # セッションごとの状態を保持するための変数を追加
+        session_state = gr.State({
+            "user_data": None,
+            "sample": None,
+            "model_a": None,
+            "model_b": None,
+            "current_index": 0
+        })
+
         # ログインコンテナ
         with gr.Column(variant="panel") as login_container:
             gr.Markdown("# 🎙️ 音声文字起こし評価実験")
@@ -119,31 +132,29 @@ def launch_experiment():
 
         # 実験インターフェースを実験コンテナ内に配置
         with experiment_container:
-            user_data = None
-            sample = None
-            model_a = None
-            model_b = None
-            current_index = 0
-
-            def init_experiment(user_id_value):
-                nonlocal user_data, sample, model_a, model_b, current_index
+            def init_experiment(user_id_value, state):
                 user_id_int = int(user_id_value)
-                user_data = load_user_data(user_id_int)
-                current_index = 0
-                if user_data:
-                    sample, model_a, model_b, current_index = get_next_sample(user_data, current_index)
-                    if sample is None:
+                state = state.copy()  # 状態のコピーを作成
+                state["user_data"] = load_user_data(user_id_int)
+                state["current_index"] = 0
+
+                if state["user_data"]:
+                    state["sample"], state["model_a"], state["model_b"], state["current_index"] = \
+                        get_next_sample(state["user_data"], state["current_index"])
+                    if state["sample"] is None:
                         return None
-                    total_samples = len(user_data)
+                    total_samples = len(state["user_data"])
                     return {
-                        audio: gr.update(value=sample['audio_path']),
-                        model_a_output: sample['model_outputs'][model_a],
-                        model_b_output: sample['model_outputs'][model_b],
-                        progress_text: f"進捗状況: {current_index}/{total_samples}"
+                        session_state: state,  # 更新された状態を保存
+                        audio: gr.update(value=state["sample"]["audio_path"]),
+                        model_a_output: state["sample"]["model_outputs"][state["model_a"]],
+                        model_b_output: state["sample"]["model_outputs"][state["model_b"]],
+                        progress_text: f"進捗状況: {state['current_index']}/{total_samples}",
+                        user_header: f"# 🎙️ 音声文字起こし評価実験（ユーザーID: {user_id_int:03d}）"
                     }
                 return None
 
-            gr.Markdown(lambda: f"# 🎙️ 音声文字起こし評価実験（ユーザーID: {int(user_id.value):03d}）")
+            user_header = gr.Markdown("# 🎙️ 音声文字起こし評価実験")  # 初期ヘッダーテキスト
             progress_text = gr.Markdown("進捗状況: 0/0")
             gr.Markdown("### 👂 以下の音声を聞いて、より正確な文字起こし結果を選んでください")
 
@@ -162,35 +173,38 @@ def launch_experiment():
             next_btn = gr.Button("➡️ 次の音声へ", size="lg", variant="secondary", visible=False)
             result_text = gr.Markdown(visible=False)
 
-            def vote_and_show_next(choice):
-                nonlocal sample, model_a, model_b
-                if not sample or not model_a or not model_b:
+            def vote_and_show_next(choice, state):
+                if not state["sample"] or not state["model_a"] or not state["model_b"]:
                     return None
-                winner = model_a if choice == "A" else model_b
+                winner = state["model_a"] if choice == "A" else state["model_b"]
                 vote_and_record(
-                    int(user_id.value), sample['id'], sample['original_text'],
-                    model_a, model_b,
-                    sample['model_outputs'][model_a],
-                    sample['model_outputs'][model_b],
+                    int(user_id.value), state["sample"]["id"], state["sample"]["original_text"],
+                    state["model_a"], state["model_b"],
+                    state["sample"]["model_outputs"][state["model_a"]],
+                    state["sample"]["model_outputs"][state["model_b"]],
                     winner
                 )
                 return {
+                    session_state: state,
                     model_a_btn: gr.update(visible=False),
                     model_b_btn: gr.update(visible=False),
                     next_btn: gr.update(visible=True),
                     result_text: gr.update(visible=True,
-                                           value="ご評価ありがとうございます。次の音声に進むには「次の音声へ」を押してください。")
+                                           value="次の音声に進むには「次の音声へ」を押してください。")
                 }
 
-            def load_next_sample():
-                nonlocal sample, model_a, model_b, current_index
-                sample, model_a, model_b, current_index = get_next_sample(user_data, current_index)
-                if user_data is None:
-                    return None
-                total_samples = len(user_data)
+            def load_next_sample(state):
+                state = state.copy()  # 状態のコピーを作成
+                state["sample"], state["model_a"], state["model_b"], state["current_index"] = \
+                    get_next_sample(state["user_data"], state["current_index"])
 
-                if sample is None:
+                if state["user_data"] is None:
+                    return None
+                total_samples = len(state["user_data"])
+
+                if state["sample"] is None:
                     return {
+                        session_state: state,
                         audio: gr.update(value=None),
                         model_a_output: "",
                         model_b_output: "",
@@ -202,25 +216,34 @@ def launch_experiment():
                     }
 
                 return {
-                    audio: gr.update(value=sample['audio_path']),
-                    model_a_output: sample['model_outputs'][model_a],
-                    model_b_output: sample['model_outputs'][model_b],
+                    session_state: state,
+                    audio: gr.update(value=state["sample"]["audio_path"]),
+                    model_a_output: state["sample"]["model_outputs"][state["model_a"]],
+                    model_b_output: state["sample"]["model_outputs"][state["model_b"]],
                     model_a_btn: gr.update(visible=True),
                     model_b_btn: gr.update(visible=True),
                     next_btn: gr.update(visible=False),
                     result_text: gr.update(visible=False),
-                    progress_text: f"進捗状況: {current_index}/{total_samples}"
+                    progress_text: f"進捗状況: {state['current_index']}/{total_samples}"
                 }
 
-            # イベントハンドラの設定
-            login_btn.click(fn=init_experiment, inputs=[user_id],
-                            outputs=[audio, model_a_output, model_b_output, progress_text])
-            model_a_btn.click(fn=vote_and_show_next, inputs=gr.State("A"),
-                              outputs=[model_a_btn, model_b_btn, next_btn, result_text])
-            model_b_btn.click(fn=vote_and_show_next, inputs=gr.State("B"),
-                              outputs=[model_a_btn, model_b_btn, next_btn, result_text])
+            # イベントハンドラの更新
+            login_btn.click(fn=init_experiment,
+                            inputs=[user_id, session_state],
+                            outputs=[session_state, audio, model_a_output, model_b_output,
+                                     progress_text, user_header])
+
+            model_a_btn.click(fn=vote_and_show_next,
+                              inputs=[gr.State("A"), session_state],
+                              outputs=[session_state, model_a_btn, model_b_btn, next_btn, result_text])
+
+            model_b_btn.click(fn=vote_and_show_next,
+                              inputs=[gr.State("B"), session_state],
+                              outputs=[session_state, model_a_btn, model_b_btn, next_btn, result_text])
+
             next_btn.click(fn=load_next_sample,
-                           outputs=[audio, model_a_output, model_b_output,
+                           inputs=[session_state],
+                           outputs=[session_state, audio, model_a_output, model_b_output,
                                     model_a_btn, model_b_btn, next_btn, result_text,
                                     progress_text])
 
