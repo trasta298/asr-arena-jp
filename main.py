@@ -88,6 +88,31 @@ def get_vote_status():
         return df.to_dict('records')
 
 
+def get_user_votes(user_id=None):
+    with get_db() as conn:
+        query = """
+            SELECT id, user_id, audio_id, original_text,
+                   model_a, model_b, model_a_output, model_b_output,
+                   winner, timestamp
+            FROM votes
+        """
+        params = []
+        if user_id:
+            query += " WHERE user_id = ?"
+            params.append(user_id)
+        query += " ORDER BY timestamp DESC"
+        df = pd.read_sql_query(query, conn, params=params)
+        return df.to_dict('records')
+
+
+def delete_vote(vote_id):
+    with get_db() as conn:
+        c = conn.cursor()
+        c.execute("DELETE FROM votes WHERE id = ?", (vote_id,))
+        conn.commit()
+        return True
+
+
 def launch_experiment():
     with gr.Blocks(title="音声文字起こし評価実験") as demo:
         # セッションごとの状態を保持するための変数を追加
@@ -117,28 +142,81 @@ def launch_experiment():
         # 管理者画面コンテナ（最初は非表示）
         admin_container = gr.Column(visible=False)
         with admin_container:
-            gr.Markdown("# 👨‍💼 管理者画面")
-            status_table = gr.Dataframe(
-                headers=["ユーザーID", "投票数", "最終投票時刻"],
-                interactive=False
-            )
-            refresh_btn = gr.Button("更新")
+            gr.Markdown("# 👨‍💼 管理画面")
+            with gr.Tab("全体の進捗"):
+                status_table = gr.Dataframe(
+                    headers=["ユーザーID", "投票数", "最終投票時刻"],
+                    interactive=False
+                )
+                refresh_btn = gr.Button("更新")
 
-            def update_status():
-                vote_status = get_vote_status()
-                data = [[s['user_id'], s['vote_count'], s['last_vote']] for s in vote_status]
-                return data
+                def update_status():
+                    status = get_vote_status()
+                    data = [[s['user_id'], s['vote_count'], s['last_vote']] for s in status]
+                    return data
 
-            refresh_btn.click(
-                fn=update_status,
-                outputs=[status_table]
-            )
+                refresh_btn.click(
+                    fn=update_status,
+                    outputs=[status_table]
+                )
 
-            # 初期データを読み込む
-            demo.load(
-                fn=update_status,
-                outputs=[status_table]
-            )
+            with gr.Tab("投票データの詳細"):
+                user_filter = gr.Number(label="ユーザーIDでフィルター（空欄で全件表示）", minimum=1, maximum=25, value=None)
+                votes_table = gr.Dataframe(
+                    headers=["ID", "ユーザーID", "音声ID", "原文", "モデルA", "モデルB",
+                             "モデルA出力", "モデルB出力", "勝者", "タイムスタンプ"],
+                    interactive=False,
+                    wrap=True
+                )
+                refresh_votes_btn = gr.Button("更新")
+                with gr.Row():
+                    delete_vote_ids = gr.Textbox(label="削除する投票ID（カンマ区切りで複数指定可）")
+                    delete_btn = gr.Button("選択した投票を削除", variant="secondary")
+                result_text = gr.Markdown()
+
+                def update_votes_table(user_id=None):
+                    votes = get_user_votes(user_id if user_id else None)
+                    data = [[v['id'], v['user_id'], v['audio_id'], v['original_text'],
+                            v['model_a'], v['model_b'], v['model_a_output'],
+                            v['model_b_output'], v['winner'], v['timestamp']] for v in votes]
+                    return data
+
+                def handle_delete_vote(vote_ids_str):
+                    if not vote_ids_str:
+                        return "削除する投票IDを入力してください。", votes_table.value
+
+                    try:
+                        # カンマ区切りの文字列をリストに変換し、空白を除去
+                        vote_ids = [int(id.strip()) for id in vote_ids_str.split(",") if id.strip()]
+
+                        with get_db() as conn:
+                            c = conn.cursor()
+                            # 複数のIDを一度に削除
+                            c.execute("DELETE FROM votes WHERE id IN ({})".format(
+                                ",".join("?" * len(vote_ids))), vote_ids)
+                            conn.commit()
+
+                        return f"投票ID: {vote_ids_str} を削除しました。", update_votes_table()
+                    except Exception as e:
+                        return f"エラーが発生しました: {str(e)}", votes_table.value
+
+                refresh_votes_btn.click(
+                    fn=update_votes_table,
+                    inputs=[user_filter],
+                    outputs=[votes_table]
+                )
+
+                delete_btn.click(
+                    fn=handle_delete_vote,
+                    inputs=[delete_vote_ids],
+                    outputs=[result_text, votes_table]
+                )
+
+                # 初期データを読み込む
+                demo.load(
+                    fn=lambda: (update_status(), update_votes_table()),
+                    outputs=[status_table, votes_table]
+                )
 
         def login(user_id, password):
             correct_password = "experiment2024"
