@@ -184,6 +184,17 @@ def launch_experiment():
 
         # 実験インターフェースを実験コンテナ内に配置
         with experiment_container:
+            def get_user_progress(user_id):
+                with get_db() as conn:
+                    c = conn.cursor()
+                    c.execute("""
+                        SELECT COUNT(DISTINCT audio_id) as completed_count
+                        FROM votes
+                        WHERE user_id = ?
+                    """, (str(user_id),))
+                    result = c.fetchone()
+                    return result[0] if result else 0
+
             def init_experiment(user_id_value, state):
                 # 管理者モードの場合は空の値を返す
                 if not user_id_value:
@@ -197,9 +208,12 @@ def launch_experiment():
                     }
 
                 user_id_int = int(user_id_value)
-                state = state.copy()  # 状態のコピーを作成
+                state = state.copy()
                 state["user_data"] = load_user_data(user_id_int)
-                state["current_index"] = 0
+
+                # ユーザーの進捗状況を取得
+                completed_count = get_user_progress(user_id_int)
+                state["current_index"] = completed_count
 
                 if state["user_data"]:
                     state["sample"], state["model_a"], state["model_b"], state["current_index"] = \
@@ -208,7 +222,7 @@ def launch_experiment():
                         return None
                     total_samples = len(state["user_data"])
                     return {
-                        session_state: state,  # 更新された状態を保存
+                        session_state: state,
                         audio: gr.update(value=state["sample"]["audio_path"]),
                         model_a_output: state["sample"]["model_outputs"][state["model_a"]],
                         model_b_output: state["sample"]["model_outputs"][state["model_b"]],
@@ -310,7 +324,7 @@ def launch_experiment():
                                     model_a_btn, model_b_btn, next_btn, result_text,
                                     progress_text])
 
-    demo.launch(server_port=5730, server_name="0.0.0.0")
+    demo.launch(server_port=5730, server_name="0.0.0.0", debug=True)
 
 
 if __name__ == "__main__":
