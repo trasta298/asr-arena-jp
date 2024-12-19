@@ -1,371 +1,317 @@
 [
     {
-        "id": "SRC4VC012-RECITATION_064",
-        "audio_path": "./audio/SRC4VC012/wav-R/RECITATION_064.wav",
-        "original_text": "この宝石は、ひとつ百万円以上のお値段です。",
+        "id": "SRC4VC008-JVNVfear_008",
+        "audio_path": "./audio/SRC4VC008/wav-R/JVNVfear_008.wav",
+        "original_text": "怖い話を聞いて、私の腕には鳥肌が立ち上がっている、ひっ、何かが見えるような気がして怖い。",
         "model_outputs": {
-            "whisper": "この宝石は1つ100万円以上のお値段です",
-            "gemini": "この宝石は一つ100万円以上のお値段です。"
+            "whisper": "怖い話を聞いて私の上では鳥肌が立ち上がってる何かが見えるような気がして怖い",
+            "gemini": "怖い話を聞いて、私の背中には鳥肌が立上がってる。幽霊が見えるような気がして怖い。"
         }
     },
     {
-        "id": "SRC4VC071-RECITATION_061",
-        "audio_path": "./audio/SRC4VC071/wav-R/RECITATION_061.wav",
-        "original_text": "小さい星をたくさん描いた、水飲みグラスはよくある。",
+        "id": "SRC4VC072-JVNVfear_009",
+        "audio_path": "./audio/SRC4VC072/wav-R/JVNVfear_009.wav",
+        "original_text": "ひい、街の抗争が激化して、いつ自分が巻き込まれるか分からない。",
         "model_outputs": {
-            "whisper": "小さい星をたくさん描いた水飲みグラスはよくある",
-            "reazon": "小さい星をたくさんえがいた水飲みグラスはよくある"
+            "whisper": "ひぃ、まちのこうそうがてちかして、いつじぶんがまちこまれるかわからない。",
+            "reazon": "ひい街の構想が劣化していつ自分が巻き込まれるか分からない"
         }
     },
     {
-        "id": "SRC4VC073-RECITATION_046",
-        "audio_path": "./audio/SRC4VC073/wav-R/RECITATION_046.wav",
-        "original_text": "鹿島明神が釘で刺し貫いて、魚が動かないようにしている。",
+        "id": "SRC4VC028-CALLS_180",
+        "audio_path": "./audio/SRC4VC028/wav-R/CALLS_180.wav",
+        "original_text": "たった300円多く払うだけで、来て設置までしていただけるんですか？",
         "model_outputs": {
-            "reazon": "鹿島明神がくぎで刺し貫いて魚が動かないようにしている",
-            "gemini": "春日明神が釘で刺し貫いて、魚が動かないようにしている。"
+            "whisper": "たった300円多く払うだけで聞いて設置までしていただけるんですか",
+            "reazon": "たった三百円多く払うだけで聞いて折衷までしていただけるんですか"
         }
     },
     {
-        "id": "SRC4VC019-CALLS_091",
-        "audio_path": "./audio/SRC4VC019/wav-R/CALLS_091.wav",
-        "original_text": "高額買い取りを宣伝してるのに、実際の買い取り金額は低いなんて、詐欺同然ですよね。",
+        "id": "SRC4VC002-JVNVsadness_004",
+        "audio_path": "./audio/SRC4VC002/wav-R/JVNVsadness_004.wav",
+        "original_text": "あぁ、祖母が危篤状態で、もうすぐこの世を去ってしまうかもしれない。悲しくて心が痛む。",
         "model_outputs": {
-            "reazon": "高額買い取りを宣伝してるのに実際の買い取り金額は低いなんて詐欺同然ですよね",
-            "gemini": "高額買取を宣伝してるのに、実際の買取金額は低いなんて詐欺同然ですよね。"
+            "whisper": "ああ、祖母が帰宅状態でもうすぐこの世を去ってしまうかもしれない悲しくて心が痛む",
+            "gemini": "ああ、蕎麦が飢餓状態でもうすぐこの世を去ってしまうかもしれない。悲しくて心が張り裂ける。"
         }
     },
     {
-        "id": "SRC4VC065-JVNVanger_001",
-        "audio_path": "./audio/SRC4VC065/wav-R/JVNVanger_001.wav",
-        "original_text": "ああ？戦争を望むのか？どうしてこんなに愚かなことを言えるんだ。",
+        "id": "SRC4VC036-CALLS_320",
+        "audio_path": "./audio/SRC4VC036/wav-R/CALLS_320.wav",
+        "original_text": "この前お願いしたプリンタの修理は、いつ頃終わりそうでしょうか？",
         "model_outputs": {
-            "reazon": "ああ戦争を望むのかどうしてこんなに愚かなことを言えるんだ",
-            "gemini": "戦争を望むのか？どうしてこんなに愚かなことを言えるんだ？"
+            "whisper": "この前お願いしたプリントの修理はいつ頃終わりそうでしょうか",
+            "gemini": "この前お願いしたプリントの修理はいつ頃終わりそうですか？"
         }
     },
     {
-        "id": "SRC4VC014-JVNVanger_020",
-        "audio_path": "./audio/SRC4VC014/wav-R/JVNVanger_020.wav",
+        "id": "SRC4VC078-RECITATION_030",
+        "audio_path": "./audio/SRC4VC078/wav-R/RECITATION_030.wav",
+        "original_text": "ポピュラーなソフトを使いセキュアな状態を復旧する。",
+        "model_outputs": {
+            "reazon": "ポピュラーなソフトを使いテキュアな状態を復旧する",
+            "gemini": "ポピュラーなソフトを使い、特定の状況を復旧する。"
+        }
+    },
+    {
+        "id": "SRC4VC021-JVNVsadness_011",
+        "audio_path": "./audio/SRC4VC021/wav-R/JVNVsadness_011.wav",
+        "original_text": "ぐすん、親友がイジメに遭っていると聞いて、何もできない自分が悲しい。",
+        "model_outputs": {
+            "whisper": "親友がいじめにあってると聞いて何もできない自分が悲しい",
+            "reazon": "フフ親友がいじめに遭ってると聞いて何もできない自分が悲しい"
+        }
+    },
+    {
+        "id": "SRC4VC089-JVNVsurprise_021",
+        "audio_path": "./audio/SRC4VC089/wav-R/JVNVsurprise_021.wav",
+        "original_text": "おや、この装備はかなり高性能だね。こんなに進歩しているとは知りませんでした。",
+        "model_outputs": {
+            "reazon": "おやこの装備はかなり高性能だねこんなに進歩しているとは知りませんでした",
+            "gemini": "この装備はかなりの高性能だね。こんなに進歩しているとは知りませんでした。"
+        }
+    },
+    {
+        "id": "SRC4VC003-CALLS_030",
+        "audio_path": "./audio/SRC4VC003/wav-R/CALLS_030.wav",
+        "original_text": "デザインの組み合わせを聞かれても、何がいいかいまいち分からないんですよ。",
+        "model_outputs": {
+            "whisper": "デザインの組み合わせ聞かれても何がいいかいまいちわかんないんですよ",
+            "reazon": "デザインの組み合わせ聞かれても何がいいかいまいち分かんないんですよ"
+        }
+    },
+    {
+        "id": "SRC4VC029-JVNVdisgust_001",
+        "audio_path": "./audio/SRC4VC029/wav-R/JVNVdisgust_001.wav",
+        "original_text": "いや、あんな醜い人間を見るのは本当に嫌だ。",
+        "model_outputs": {
+            "whisper": "いやあんな醜い人間を見るな本当に嫌だ",
+            "reazon": "いやあんな醜い人間を見るのはほんっとに嫌だ"
+        }
+    },
+    {
+        "id": "SRC4VC038-CALLS_061",
+        "audio_path": "./audio/SRC4VC038/wav-R/CALLS_061.wav",
+        "original_text": "プリングルズをプリングルスだと思っている人が多すぎるよ。",
+        "model_outputs": {
+            "reazon": "プリングルズをプリングルズだと思ってる人が多すぎるよ",
+            "gemini": "プリングルズを、プリングルスだと思ってる人が多すぎるよ。"
+        }
+    },
+    {
+        "id": "SRC4VC032-RECITATION_132",
+        "audio_path": "./audio/SRC4VC032/wav-R/RECITATION_132.wav",
+        "original_text": "鬼太郎くんは冗談半分で盗みに入って怪我をした。",
+        "model_outputs": {
+            "whisper": "喜太郎くんは冗談半分で盗みに入って怪我をした",
+            "reazon": "鬼太郎くんは冗談半分で盗みに入ってけがをした"
+        }
+    },
+    {
+        "id": "SRC4VC052-CALLS_316",
+        "audio_path": "./audio/SRC4VC052/wav-R/CALLS_316.wav",
+        "original_text": "この間接照明、部屋のアクセントにもなり良かったです。",
+        "model_outputs": {
+            "whisper": "この観察照明部屋のアクセントにもなりかなり良かったです",
+            "gemini": "この観葉植物、部屋のアクセントにもなり、かなり良かったです。"
+        }
+    },
+    {
+        "id": "SRC4VC013-JVNVanger_013",
+        "audio_path": "./audio/SRC4VC013/wav-R/JVNVanger_013.wav",
+        "original_text": "なに！この鬼畜が！あなたのような人間がいるから世の中が腐るんだよ。",
+        "model_outputs": {
+            "whisper": "なにこの鬼畜があなたのような人間がいるか不意なのか腐るんだよ",
+            "reazon": "何この鬼畜があなたのような人間がいるから家の中腐るんだよ"
+        }
+    },
+    {
+        "id": "SRC4VC049-RECITATION_191",
+        "audio_path": "./audio/SRC4VC049/wav-R/RECITATION_191.wav",
+        "original_text": "彼は不服そうに呟いた。",
+        "model_outputs": {
+            "whisper": "彼は不服そうにつぶやいた",
+            "gemini": "彼は不満そうに呟いた。"
+        }
+    },
+    {
+        "id": "SRC4VC085-JVNVsadness_005",
+        "audio_path": "./audio/SRC4VC085/wav-R/JVNVsadness_005.wav",
+        "original_text": "うう、自己嫌悪に陥ってしまって、自分自身が嫌いになってしまった。どうしたらいいか分からない。",
+        "model_outputs": {
+            "whisper": "うー自己嫌悪に陥ってしまって自分自身が嫌いになってしまったどうしたらいいかわからない",
+            "reazon": "うう自己嫌悪におちいってしまって自分自身が嫌いになってしまったどうしたらいいか分からない"
+        }
+    },
+    {
+        "id": "SRC4VC045-RECITATION_213",
+        "audio_path": "./audio/SRC4VC045/wav-R/RECITATION_213.wav",
+        "original_text": "聞きつけて、件の嫗、ぶるぶるとかぶりをふった。",
+        "model_outputs": {
+            "reazon": "聞きつけて九段のオーナーぷるぷるとかぶりをふった",
+            "gemini": "聞きつけて久段の大納プルプルと頭を振った。"
+        }
+    },
+    {
+        "id": "SRC4VC014-RECITATION_073",
+        "audio_path": "./audio/SRC4VC014/wav-R/RECITATION_073.wav",
+        "original_text": "テンプル君、既に真逆だと言った。",
+        "model_outputs": {
+            "whisper": "テンプル君すでに真逆だと言った",
+            "gemini": "テンプル君、既に魔逆だと言った。"
+        }
+    },
+    {
+        "id": "SRC4VC010-JVNVsurprise_036",
+        "audio_path": "./audio/SRC4VC010/wav-R/JVNVsurprise_036.wav",
+        "original_text": "ん？あの映画に出演している女優さんは、去年まで普通の会社員だったって本当ですか？",
+        "model_outputs": {
+            "whisper": "ん?あの映画に出演している女優さんは去年まで普通の会社員だったって本当ですか?",
+            "gemini": "あの映画に出演している女優さんは、去年まで普通の会社員だったって本当ですか？"
+        }
+    },
+    {
+        "id": "SRC4VC027-JVNVfear_007",
+        "audio_path": "./audio/SRC4VC027/wav-R/JVNVfear_007.wav",
+        "original_text": "ひっ、昨夜見た悪夢があまりにも恐ろしかったので、今でも震えが止まりません。",
+        "model_outputs": {
+            "reazon": "ひいえ昨日見た悪魔があまりにも恐ろしかったので今でも震えが止まりません",
+            "gemini": "昨日見た悪夢があまりにも凄かったもので、今でも震えが止まりません。"
+        }
+    },
+    {
+        "id": "SRC4VC100-JVNVsurprise_013",
+        "audio_path": "./audio/SRC4VC100/wav-R/JVNVsurprise_013.wav",
+        "original_text": "えっ、あの車のスピードは時速200キロ以上だったって？信じられない！",
+        "model_outputs": {
+            "whisper": "でっあの車のスピードを時速200キロ以上だったって信じられない",
+            "reazon": "あの車のスピード時速二百キロ以上だったって信じられない"
+        }
+    },
+    {
+        "id": "SRC4VC064-JVNVhappiness_032",
+        "audio_path": "./audio/SRC4VC064/wav-R/JVNVhappiness_032.wav",
+        "original_text": "ヤッホー！今日の天気、ちょうどいい感じだね！風も涼しくて最高！一緒に散歩しよう。",
+        "model_outputs": {
+            "whisper": "やっほー今日の天気ちょうどいい感じだね風も涼しくて太鼓を一緒に散歩しよう",
+            "reazon": "やっほ今日の天気ちょうどいいかんじだね風も涼しい太鼓一緒に散歩しよう"
+        }
+    },
+    {
+        "id": "SRC4VC079-CALLS_013",
+        "audio_path": "./audio/SRC4VC079/wav-R/CALLS_013.wav",
+        "original_text": "こないだノートを買ったばかりなのに、もう外れてきたんですけど。",
+        "model_outputs": {
+            "whisper": "この間ノートを買ったばかりなのにもう外れてきたんですけど",
+            "gemini": "こないだの靴を買ったばかりなのに、もう外れてきたんですけど。"
+        }
+    },
+    {
+        "id": "SRC4VC055-JVNVdisgust_002",
+        "audio_path": "./audio/SRC4VC055/wav-R/JVNVdisgust_002.wav",
+        "original_text": "いや、あの家は本当にみすぼらしい。中に入る前から不快な気分になる。",
+        "model_outputs": {
+            "reazon": "いやあの家本当にすばらしい中に入る前からアイな気分になる",
+            "gemini": "いや、あの、いや、本当に素晴らしい。中に入る前から、良い気分になる。"
+        }
+    },
+    {
+        "id": "SRC4VC031-RECITATION_069",
+        "audio_path": "./audio/SRC4VC031/wav-R/RECITATION_069.wav",
+        "original_text": "お隣さんが蒟蒻を持っていらっしゃる。",
+        "model_outputs": {
+            "whisper": "お隣さんが婚約を持っていらっしゃる",
+            "reazon": "お隣さんがこんにゃくを持っていらっしゃる"
+        }
+    },
+    {
+        "id": "SRC4VC013-RECITATION_038",
+        "audio_path": "./audio/SRC4VC013/wav-R/RECITATION_038.wav",
+        "original_text": "結局のところお互い五十歩百歩だ。",
+        "model_outputs": {
+            "whisper": "一本ところは歌が50歩やっぱだ。",
+            "reazon": "生きこんだからお互い五十パヤップだ"
+        }
+    },
+    {
+        "id": "SRC4VC090-JVNVsurprise_024",
+        "audio_path": "./audio/SRC4VC090/wav-R/JVNVsurprise_024.wav",
+        "original_text": "なに？彼女はアルゼンチンに住んでいたことがあるんですか？すごく興味深いですね。",
+        "model_outputs": {
+            "whisper": "なに彼女はアルゼンチンに住んでいたことがあるんですかすごく興味深いですね",
+            "gemini": "何？彼女はアルゼンチンに住んでいたことがあるのですか？すごく興味深いですねえ。"
+        }
+    },
+    {
+        "id": "SRC4VC060-JVNVdisgust_002",
+        "audio_path": "./audio/SRC4VC060/wav-R/JVNVdisgust_002.wav",
+        "original_text": "いや、あの家は本当にみすぼらしい。中に入る前から不快な気分になる。",
+        "model_outputs": {
+            "reazon": "いやあの家は本当にみそうらしい中に入る前から不快な気分になる",
+            "gemini": "いや、あの家は本当に不気味。中に入る前から不快な気分になる。"
+        }
+    },
+    {
+        "id": "SRC4VC022-JVNVsurprise_017",
+        "audio_path": "./audio/SRC4VC022/wav-R/JVNVsurprise_017.wav",
+        "original_text": "おお！あの有名人もこのイベントに参加するんですか？",
+        "model_outputs": {
+            "reazon": "おあの有名人もこのイベントに参加するんですか",
+            "gemini": "あの有名人もこのイベントに参加するのですか？"
+        }
+    },
+    {
+        "id": "SRC4VC009-JVNVsadness_001",
+        "audio_path": "./audio/SRC4VC009/wav-R/JVNVsadness_001.wav",
+        "original_text": "あーあ、昨日の事故で大切な車が全損になっちゃった。もうどうしようもないよ。",
+        "model_outputs": {
+            "whisper": "ああ、昨日の事故で大切な車が全走になっちゃった。もうどうしようもないよ。",
+            "gemini": "昨日の事故で、大切な車が全損になっちゃった。もうどうしようもないよ。"
+        }
+    },
+    {
+        "id": "SRC4VC091-JVNVanger_020",
+        "audio_path": "./audio/SRC4VC091/wav-R/JVNVanger_020.wav",
         "original_text": "ふん、私のプライバシーを侵害するなんて、どういうつもりだ？",
         "model_outputs": {
-            "whisper": "私のクライバシーを信頼するなんてどういうつもりだ",
-            "gemini": "私の誇りを侵害するなんて、どういうつもりだ！"
+            "whisper": "ふん私のプライバシーを侵害するなんてどういうつもりだ",
+            "reazon": "ふんわたしのプライバシーを侵害するなんてどういうつもりだ"
         }
     },
     {
-        "id": "SRC4VC086-RECITATION_044",
-        "audio_path": "./audio/SRC4VC086/wav-R/RECITATION_044.wav",
-        "original_text": "すべての獲物を望みどおりに狙う技術がある。",
-        "model_outputs": {
-            "reazon": "すべての獲物をのとみどおりに使う",
-            "gemini": "全ての色物を、後戻り出来ない程に燃やす力がある。"
-        }
-    },
-    {
-        "id": "SRC4VC002-CALLS_059",
-        "audio_path": "./audio/SRC4VC002/wav-R/CALLS_059.wav",
-        "original_text": "すいません、おたくで販売している食用油なんですけども、表記がややこしくていつも困っています。何とかなりませんか？",
-        "model_outputs": {
-            "whisper": "すいませんお宅で販売している食用油なんですけども表記がややこしくていつも困っていますなんとかなりませんか",
-            "gemini": "すみません。お宅で販売している食用油なんですけれども、表示が読みにくくて、いつも困っています。何とかなりませんかね？"
-        }
-    },
-    {
-        "id": "SRC4VC054-JVNVsurprise_004",
-        "audio_path": "./audio/SRC4VC054/wav-R/JVNVsurprise_004.wav",
-        "original_text": "あっ、この株式の価格が急騰している！まさかこんなに早く儲けが出るなんて。",
-        "model_outputs": {
-            "whisper": "あっこの株式の価格が急凍してるまさかこんなに早く儲けが出るなんて",
-            "reazon": "あっこの株式の価格が急騰してるまさかこんなに早くもうけが出るなんて"
-        }
-    },
-    {
-        "id": "SRC4VC068-JVNVsurprise_033",
-        "audio_path": "./audio/SRC4VC068/wav-R/JVNVsurprise_033.wav",
-        "original_text": "わお、あの若い人がベンチャー企業を立ち上げたんだって！すごいですね！",
-        "model_outputs": {
-            "reazon": "わあの若い人がベンチャー企業を立ち上げたんだってすっごいですね",
-            "gemini": "あの若い人がベンチャー企業を立ち上げたんだって、凄いですよね。"
-        }
-    },
-    {
-        "id": "SRC4VC099-RECITATION_162",
-        "audio_path": "./audio/SRC4VC099/wav-R/RECITATION_162.wav",
-        "original_text": "彼自身は、レジ業務につきたいと思っている。",
-        "model_outputs": {
-            "whisper": "彼自身は理事業務に就きたいと思っている",
-            "gemini": "彼は自身がビジネス業務につきたいと思っている。"
-        }
-    },
-    {
-        "id": "SRC4VC007-CALLS_225",
-        "audio_path": "./audio/SRC4VC007/wav-R/CALLS_225.wav",
-        "original_text": "すみません、そちらではもうモルモットのえさの取り扱いはなくなったんでしょうか。",
-        "model_outputs": {
-            "whisper": "すみませんそちらではもうモルモットの餌の取り扱いはなくなったんでしょうか",
-            "gemini": "すみません。そちらではもうモルモットのエサの取り扱いはなくなったんでしょうか。"
-        }
-    },
-    {
-        "id": "SRC4VC046-JVNVsurprise_012",
-        "audio_path": "./audio/SRC4VC046/wav-R/JVNVsurprise_012.wav",
-        "original_text": "うわあ、あのきっかけで結婚するとは思わなかった！",
-        "model_outputs": {
-            "reazon": "うわあのきっかけが結婚するとは思わなかった",
-            "gemini": "うわあ、あのきっかけで結婚するとは思いもつかなかった。"
-        }
-    },
-    {
-        "id": "SRC4VC077-JVNVsurprise_006",
-        "audio_path": "./audio/SRC4VC077/wav-R/JVNVsurprise_006.wav",
-        "original_text": "あれ、あの人エキストラ出演してたんですか？全然気が付きませんでした。",
-        "model_outputs": {
-            "whisper": "あれあの人エキストラ出演してたんですか全然気がつきませんでした",
-            "reazon": "あの人エキストラ出演してたんですか全然気が付きませんでした"
-        }
-    },
-    {
-        "id": "SRC4VC096-RECITATION_187",
-        "audio_path": "./audio/SRC4VC096/wav-R/RECITATION_187.wav",
-        "original_text": "従軍記者は大尉相当の待遇を受ける。",
-        "model_outputs": {
-            "whisper": "従順記者は大位相当の介護を受ける",
-            "gemini": "優秀記者は、大変多くの会議を受ける。"
-        }
-    },
-    {
-        "id": "SRC4VC078-RECITATION_077",
-        "audio_path": "./audio/SRC4VC078/wav-R/RECITATION_077.wav",
-        "original_text": "茶一つ参らぬか、まあいいで。",
-        "model_outputs": {
-            "whisper": "茶一つはいらぬかまあいいで",
-            "gemini": "一つは要らぬか。まあ、いいで。"
-        }
-    },
-    {
-        "id": "SRC4VC011-JVNVsurprise_023",
-        "audio_path": "./audio/SRC4VC011/wav-R/JVNVsurprise_023.wav",
-        "original_text": "なに、あの人が無人島に1年間住んでいたって？本当に生きて帰ってきたんですか？",
-        "model_outputs": {
-            "whisper": "なにあの人が無人島に1年間住んでいたって本当に生きて帰ってきたんですか?",
-            "reazon": "あの人が無人島に一年間住んでいたって本当に生きて帰ってきたんですか"
-        }
-    },
-    {
-        "id": "SRC4VC064-JVNVdisgust_004",
-        "audio_path": "./audio/SRC4VC064/wav-R/JVNVdisgust_004.wav",
-        "original_text": "うあ、あの人は本当に音痴で、歌を聞くと耳が痛くなるよ。",
-        "model_outputs": {
-            "reazon": "うわあの人は本当に音痴でだを聴くと耳が痛くなるよ",
-            "gemini": "うわあ。あの人は本当に温かくて、歌を聴くと心が痛くなるよ。"
-        }
-    },
-    {
-        "id": "SRC4VC056-CALLS_081",
-        "audio_path": "./audio/SRC4VC056/wav-R/CALLS_081.wav",
-        "original_text": "この間、レジャー施設に行ったんだけど、パンフレットがほしいだけなのに、番号札をとるように言われたんだけど！",
-        "model_outputs": {
-            "reazon": "この間レジャ施設に行ったんだけどパンフレットが欲しいだけなのに番号を取るように言われたんだけど",
-            "gemini": "こないだレジャー施設に行ったんだけど、パンフレット欲しいだけなのに、番号を取れと言われたんだけど。"
-        }
-    },
-    {
-        "id": "SRC4VC055-JVNVfear_011",
-        "audio_path": "./audio/SRC4VC055/wav-R/JVNVfear_011.wav",
-        "original_text": "ひえ、テロリズムが蔓延する世界で生きることが怖くて何もできない。",
-        "model_outputs": {
-            "whisper": "いえ、テロリズムを蔓延する世界で生きることが怖くて何もできない",
-            "reazon": "いえテロリズムがまん延する世界で生きることが怖くて何もできない"
-        }
-    },
-    {
-        "id": "SRC4VC044-CALLS_231",
-        "audio_path": "./audio/SRC4VC044/wav-R/CALLS_231.wav",
-        "original_text": "iPhoneの機種変更で、データの移換が無事に終わりました。",
-        "model_outputs": {
-            "whisper": "iPhoneの機種変更で、データの移管が無事に終わりました。",
-            "gemini": "iPhoneの機種変更で、データの移行が無事におわりました。"
-        }
-    },
-    {
-        "id": "SRC4VC067-CALLS_311",
-        "audio_path": "./audio/SRC4VC067/wav-R/CALLS_311.wav",
-        "original_text": "色々なパターンがあったので、飽きずに続けられました。",
-        "model_outputs": {
-            "reazon": "いろいろなパターンがあったので飽きずに続けられました",
-            "gemini": "色々なパターンがあったので、秋ズネ続けられました。"
-        }
-    },
-    {
-        "id": "SRC4VC071-JVNVsurprise_001",
-        "audio_path": "./audio/SRC4VC071/wav-R/JVNVsurprise_001.wav",
-        "original_text": "ああ、彼は本当に速い！ダッシュの速さは尋常じゃない！",
-        "model_outputs": {
-            "whisper": "ああ彼は本当に早いダッシュの速さは尋常じゃない",
-            "reazon": "ああ彼はホントに速いダッシュの速さは尋常じゃない"
-        }
-    },
-    {
-        "id": "SRC4VC066-JVNVsadness_007",
-        "audio_path": "./audio/SRC4VC066/wav-R/JVNVsadness_007.wav",
-        "original_text": "うわあ、この仕事での苦労が報われないと思うと、本当に悲しくて辛い。",
-        "model_outputs": {
-            "reazon": "うわこの仕事での苦労が報われないと思うと本当に悲しくてつらい",
-            "gemini": "うわあ。この仕事でのプロが報われないと思うと、本当に悲しくて辛い。"
-        }
-    },
-    {
-        "id": "SRC4VC058-JVNVhappiness_011",
-        "audio_path": "./audio/SRC4VC058/wav-R/JVNVhappiness_011.wav",
-        "original_text": "今、私は大学の合格通知をもらったんだ！えへへ、歓喜のあまり飛び跳ねたくなるぐらいうれしい！",
-        "model_outputs": {
-            "whisper": "今私は大学の合格通知をもらったんだえへへ歓喜のあまり飛び跳ねたくなるぐらい嬉しい",
-            "reazon": "今私は大学の合格通知をもらったんだえへ歓喜のあまり跳びはねたくなるぐらいうれしい"
-        }
-    },
-    {
-        "id": "SRC4VC072-JVNVhappiness_031",
-        "audio_path": "./audio/SRC4VC072/wav-R/JVNVhappiness_031.wav",
-        "original_text": "ヤッホー、今日の夕陽は麗しい！こんなに美しい光景を見ることができて、本当に幸せだね。",
-        "model_outputs": {
-            "reazon": "やっほー今日の夕日は麗しいこんなに美しい光景を見ることができて本当に幸せだね",
-            "gemini": "やったー！今日の夕日は美しい！こんなに美しい夕焼けを見る事が出来て本当に幸せだね！"
-        }
-    },
-    {
-        "id": "SRC4VC018-RECITATION_222",
-        "audio_path": "./audio/SRC4VC018/wav-R/RECITATION_222.wav",
-        "original_text": "ヘスティア所長は、十二音音楽の作法を知っている。",
-        "model_outputs": {
-            "whisper": "ケスティア所長は12音音楽の作法を知っている",
-            "reazon": "ヘスティア所長は十二音楽の作法を知っている"
-        }
-    },
-    {
-        "id": "SRC4VC071-RECITATION_063",
-        "audio_path": "./audio/SRC4VC071/wav-R/RECITATION_063.wav",
+        "id": "SRC4VC038-RECITATION_063",
+        "audio_path": "./audio/SRC4VC038/wav-R/RECITATION_063.wav",
         "original_text": "ロナルドホープ大尉が大将のマンションへ急行しました。",
         "model_outputs": {
-            "whisper": "ロナルド・ホープ隊員が対象のマンションへ急行しました",
-            "gemini": "ロナルド・ホープタイが大統領のマンションへ急行しました。"
+            "whisper": "ロナルド・ホープ隊員が大正のマンションへ急行しました",
+            "gemini": "ロナウド・フォープタイが、大将のマンションへ急行しました。"
         }
     },
     {
-        "id": "SRC4VC076-JVNVsurprise_030",
-        "audio_path": "./audio/SRC4VC076/wav-R/JVNVsurprise_030.wav",
-        "original_text": "まあ、彼が次の市長選挙に出馬するとは驚きですね。",
+        "id": "SRC4VC090-JVNVhappiness_021",
+        "audio_path": "./audio/SRC4VC090/wav-R/JVNVhappiness_021.wav",
+        "original_text": "私たちの国と彼らの国との友好協定が結ばれた！これでより良い関係を築いていけるね。やった！",
         "model_outputs": {
-            "reazon": "まあ彼が次の市長選挙に出馬するとは驚きですね",
-            "gemini": "彼が次の市長選挙に出馬するとは驚きですね。"
+            "whisper": "私たちの国と彼らの国との友好協定が結ばれたこれでより良い関係を築いていけるねやった",
+            "reazon": "私たちの国と彼らの国との友好協定が結ばれたこれでよりよい関係を築いていけるねやった"
         }
     },
     {
-        "id": "SRC4VC018-CALLS_207",
-        "audio_path": "./audio/SRC4VC018/wav-R/CALLS_207.wav",
-        "original_text": "入院保険が無事に入金しました。ありがとうございました。",
+        "id": "SRC4VC026-JVNVsurprise_020",
+        "audio_path": "./audio/SRC4VC026/wav-R/JVNVsurprise_020.wav",
+        "original_text": "おっと、この会場のキャパシティーは500人だったのに、もう600人以上も入ってるよ！",
         "model_outputs": {
-            "reazon": "入院保険が無事に入金しました",
-            "gemini": "入院保険が、無事に有効になりました。ありがとうございました。"
+            "whisper": "おっとこの会場のキャパシティは500人だったのにもう600人以上も入ってるよ",
+            "gemini": "この会場のキャパシティは500人だったのに、もう600人以上も入ってるよ。"
         }
     },
     {
-        "id": "SRC4VC031-RECITATION_105",
-        "audio_path": "./audio/SRC4VC031/wav-R/RECITATION_105.wav",
-        "original_text": "連中はリビングでぺちゃくちゃ喋って、警戒していない。",
+        "id": "SRC4VC066-JVNVsurprise_019",
+        "audio_path": "./audio/SRC4VC066/wav-R/JVNVsurprise_019.wav",
+        "original_text": "おっと、あの方が乗っているのは人力車ですか？こんなに現代的な街で見かけるなんて意外ですね。",
         "model_outputs": {
-            "whisper": "連中はリビングでぺちゃぺちゃ喋って警戒していない",
-            "reazon": "連中はリビングでぺちゃくちゃしゃべって警戒していない"
-        }
-    },
-    {
-        "id": "SRC4VC033-JVNVsadness_003",
-        "audio_path": "./audio/SRC4VC033/wav-R/JVNVsadness_003.wav",
-        "original_text": "あぁ、私が大切に育てていた花が枯死してしまった。もう見ることもできないと思うと悲しくて仕方がない。",
-        "model_outputs": {
-            "whisper": "ああ私が大切に育てていた花が虎視してしまったもう見ることもできないと思うと悲しくて仕方がない",
-            "reazon": "ああ私が大切に育てていた花が枯死してしまったもう見ることもできないと思うと悲しくてしかたがない"
-        }
-    },
-    {
-        "id": "SRC4VC016-JVNVsurprise_002",
-        "audio_path": "./audio/SRC4VC016/wav-R/JVNVsurprise_002.wav",
-        "original_text": "ああ！この歯ブラシは超音波で歯垢を落とすんですか？革命的な技術ですね！",
-        "model_outputs": {
-            "whisper": "ああ、この歯ブラシは超音波で思考を落とすんですか?革命的な技術ですね。",
-            "gemini": "この歯ブラシは超音波で歯垢を落とすのですか？革命的なグッズですね。"
-        }
-    },
-    {
-        "id": "SRC4VC004-JVNVsurprise_014",
-        "audio_path": "./audio/SRC4VC004/wav-R/JVNVsurprise_014.wav",
-        "original_text": "えっ、このアプリの更新速度が早い！たった数日で新しい機能が追加されるとは。",
-        "model_outputs": {
-            "whisper": "えっこのアプリの更新速度が速いたったそれ実で新しい機能が追加されるとは",
-            "gemini": "このアプリの更新速度が早い。数日毎に新しい機能が追加される。"
-        }
-    },
-    {
-        "id": "SRC4VC042-JVNVhappiness_022",
-        "audio_path": "./audio/SRC4VC042/wav-R/JVNVhappiness_022.wav",
-        "original_text": "やった！私たちが買った株式は高値で売れたんだ！大金を手に入れたよ！",
-        "model_outputs": {
-            "whisper": "やった。私たちが買った株式は高値で売れたんだ。大金を手に入れたよ。",
-            "gemini": "やった！私たちが買った株は高値で売れたんだ。大金を得たよ！"
-        }
-    },
-    {
-        "id": "SRC4VC021-RECITATION_105",
-        "audio_path": "./audio/SRC4VC021/wav-R/RECITATION_105.wav",
-        "original_text": "連中はリビングでぺちゃくちゃ喋って、警戒していない。",
-        "model_outputs": {
-            "reazon": "連中はリビングでぺちゃくちゃしゃべって警戒していない",
-            "gemini": "連中はイビイングでぺちゃくちゃ喋って、警戒していない。"
-        }
-    },
-    {
-        "id": "SRC4VC055-JVNVdisgust_010",
-        "audio_path": "./audio/SRC4VC055/wav-R/JVNVdisgust_010.wav",
-        "original_text": "ええ、どう見てもこのチーズは腐敗しているだろう？食べるのは絶対に嫌だ。",
-        "model_outputs": {
-            "whisper": "ええどう見てもこのチーズは愛してるだろう食べるのは絶対に嫌だ",
-            "reazon": "どう見てもこのキーズは愛してるだろ食べるのは絶対に嫌だ"
-        }
-    },
-    {
-        "id": "SRC4VC042-CALLS_029",
-        "audio_path": "./audio/SRC4VC042/wav-R/CALLS_029.wav",
-        "original_text": "こっちのニーズに気づいて、もうちょっと配慮して施術をしてもらえると嬉しいんだよね。",
-        "model_outputs": {
-            "whisper": "こっちのニーズに気づいてもうちょっと配慮して手術をしてもらえると嬉しいんだよね。",
-            "reazon": "こっちのニーズに気付いてもうちょっと配慮して施術をしてもらえるとうれしいんだよね"
-        }
-    },
-    {
-        "id": "SRC4VC016-CALLS_064",
-        "audio_path": "./audio/SRC4VC016/wav-R/CALLS_064.wav",
-        "original_text": "このあいだ買ったビールなんだけど、おいしくない。高かったのに。もっとおいしくならないの？",
-        "model_outputs": {
-            "reazon": "この間買ったビールなんだけどおいしくない高かったのにもっとおいしくならないの",
-            "gemini": "こないだ買ったビールなんだけど、美味しくない！高かったのに！もっと美味しくならないの？"
-        }
-    },
-    {
-        "id": "SRC4VC004-JVNVhappiness_010",
-        "audio_path": "./audio/SRC4VC004/wav-R/JVNVhappiness_010.wav",
-        "original_text": "ええ、このリゾートホテルのプールは本当に心地よい。水の温度もちょうどいいし、景色も最高だよ。",
-        "model_outputs": {
-            "whisper": "ええこのリゾートホテルのクールは本当に心地よい水の温度もちょうどいいし景色も最高だよ",
-            "gemini": "このリゾートホテルのプールは本当に気持ち良い。水の温度もちょうど良いし、景色も最高だよ。"
-        }
-    },
-    {
-        "id": "SRC4VC011-RECITATION_221",
-        "audio_path": "./audio/SRC4VC011/wav-R/RECITATION_221.wav",
-        "original_text": "ムンムンとした熱気に、あの淡水魚もへとへとになっている。",
-        "model_outputs": {
-            "whisper": "むんむんとした熱気にあの淡水魚もケトケトになっている",
-            "gemini": "ムンムンとした熱気に、あの炭水魚もへとへとになっている。"
+            "reazon": "おっとあの方が乗っているのは人力車ですかこんなに現代的な街で見かけるなんて意外ですね",
+            "gemini": "おっと。あの者が乗っているのは人力車ですか？こんなに現代的な街で人力車なんて、意外ですね。"
         }
     },
     {
@@ -373,26 +319,80 @@
         "audio_path": "./audio/SRC4VC016/wav-R/RECITATION_237.wav",
         "original_text": "皮膚が私のフェチである。",
         "model_outputs": {
-            "whisper": "リフが私のフェチである",
-            "reazon": "ifuが私のフェチである"
+            "reazon": "ifuが私のフェチである",
+            "gemini": "医者が私のフェチである。"
         }
     },
     {
-        "id": "SRC4VC023-JVNVsurprise_020",
-        "audio_path": "./audio/SRC4VC023/wav-R/JVNVsurprise_020.wav",
-        "original_text": "おっと、この会場のキャパシティーは500人だったのに、もう600人以上も入ってるよ！",
+        "id": "SRC4VC060-CALLS_063",
+        "audio_path": "./audio/SRC4VC060/wav-R/CALLS_063.wav",
+        "original_text": "スイカを買って帰って切ったら、スイカの種が結構いっぱいあるのが気になっちゃって。",
         "model_outputs": {
-            "reazon": "おっとこの会場はキャパシティーが五百人だったのにもう六百人以上も入ってるよ",
-            "gemini": "もっと、この会場はキャパシティが500人だったのに、もう600人以上の入ってるよ！"
+            "whisper": "イカを買って帰ってきたらスイカの種が結構いっぱいあるのが気になっちゃって",
+            "gemini": "西瓜を買って帰ってきたら、西瓜の種が結構いっぱいあるのが気になって。"
         }
     },
     {
-        "id": "SRC4VC027-JVNVsurprise_006",
-        "audio_path": "./audio/SRC4VC027/wav-R/JVNVsurprise_006.wav",
-        "original_text": "あれ、あの人エキストラ出演してたんですか？全然気が付きませんでした。",
+        "id": "SRC4VC062-JVNVsurprise_015",
+        "audio_path": "./audio/SRC4VC062/wav-R/JVNVsurprise_015.wav",
+        "original_text": "ええ、この本が本当に６００円で買えるんですか？安すぎますね！",
         "model_outputs": {
-            "whisper": "あれあの人エキストラ出演してたんですか全然気がつきませんでした",
-            "reazon": "あの人エキストラ出演してたんですか全然気が付きませんでした"
+            "whisper": "ええこの本が本当に600円で買えるんですか安すぎますね",
+            "gemini": "この本が本当に600円で買えるのですか？安すぎますね。"
+        }
+    },
+    {
+        "id": "SRC4VC040-RECITATION_199",
+        "audio_path": "./audio/SRC4VC040/wav-R/RECITATION_199.wav",
+        "original_text": "絵葉書と一緒に銀色のルアーをマッシュに送った。",
+        "model_outputs": {
+            "whisper": "絵はがきと一緒に銀色のルアーをマッシュに送った",
+            "reazon": "絵葉書と一緒に銀色のルアーをマッシュに贈った"
+        }
+    },
+    {
+        "id": "SRC4VC055-RECITATION_011",
+        "audio_path": "./audio/SRC4VC055/wav-R/RECITATION_011.wav",
+        "original_text": "ウサギのキッドは気分よくピョン、またピョンと飛び続けた。",
+        "model_outputs": {
+            "whisper": "うさぎのキットは気分よくギョンまたギョンと問い続けた",
+            "gemini": "ウサギのキットは、気分よく4、また4と、食べ続けた。"
+        }
+    },
+    {
+        "id": "SRC4VC070-JVNVanger_021",
+        "audio_path": "./audio/SRC4VC070/wav-R/JVNVanger_021.wav",
+        "original_text": "もう！君がいつもそんなに無茶をするから、体を痛めるんだよ。反省しなさい！",
+        "model_outputs": {
+            "whisper": "もう君がいつもそんなに無茶をするから体を痛めるんだよ反省しなさい",
+            "gemini": "君がいつもそんなに無茶をするから体を痛めるんだよ。反省しなさい。"
+        }
+    },
+    {
+        "id": "SRC4VC031-CALLS_043",
+        "audio_path": "./audio/SRC4VC031/wav-R/CALLS_043.wav",
+        "original_text": "高すぎるので、もう少し割安にしてもらえませんか。",
+        "model_outputs": {
+            "whisper": "高すぎるのでもう少し割安にしてもらえませんか",
+            "gemini": "高すぎるので、もう少しお安くしてもらえませんか？"
+        }
+    },
+    {
+        "id": "SRC4VC053-JVNVsurprise_002",
+        "audio_path": "./audio/SRC4VC053/wav-R/JVNVsurprise_002.wav",
+        "original_text": "ああ！この歯ブラシは超音波で歯垢を落とすんですか？革命的な技術ですね！",
+        "model_outputs": {
+            "reazon": "ああこの歯ブラシは超音波で歯垢を落とすんですか革命的な技術ですね",
+            "gemini": "この歯ブラシは超音波で歯垢を落とすのですか？革命的な技術ですね。"
+        }
+    },
+    {
+        "id": "SRC4VC004-JVNVanger_019",
+        "audio_path": "./audio/SRC4VC004/wav-R/JVNVanger_019.wav",
+        "original_text": "ふん、いい加減にしろよ！いつもダメ出しばかりで何も褒め言葉がないんだ。",
+        "model_outputs": {
+            "whisper": "くんいい加減にしろよいつも食べなしがかれて何も褒め言葉がないんだ",
+            "reazon": "君いいかげんにしろよいつも駄目なしばかりで何も褒め言葉がないんだ"
         }
     },
     {
@@ -405,21 +405,300 @@
         }
     },
     {
-        "id": "SRC4VC088-RECITATION_002",
-        "audio_path": "./audio/SRC4VC088/wav-R/RECITATION_002.wav",
-        "original_text": "民衆がテュルリー宮殿に侵入した。",
+        "id": "SRC4VC038-RECITATION_123",
+        "audio_path": "./audio/SRC4VC038/wav-R/RECITATION_123.wav",
+        "original_text": "卑怯者は悪党です。",
         "model_outputs": {
-            "whisper": "民衆がテルル宮殿に侵入した",
-            "gemini": "民衆がケルルー宮殿に侵入した。"
+            "reazon": "ひきょうものは悪党です",
+            "gemini": "非行者は悪党です。"
         }
     },
     {
-        "id": "SRC4VC056-JVNVsurprise_035",
-        "audio_path": "./audio/SRC4VC056/wav-R/JVNVsurprise_035.wav",
-        "original_text": "ん？彼があんなに上手いのにアマチュアなの？驚きました。",
+        "id": "SRC4VC076-JVNVsurprise_030",
+        "audio_path": "./audio/SRC4VC076/wav-R/JVNVsurprise_030.wav",
+        "original_text": "まあ、彼が次の市長選挙に出馬するとは驚きですね。",
         "model_outputs": {
-            "whisper": "ん?彼があんなにうまいのには間違いないの?驚きました。",
-            "gemini": "彼があんなに上手いのに、待ちわびたの、驚きました。"
+            "whisper": "まあ彼が次の市長選挙に出馬するとは驚きですね",
+            "gemini": "彼が次の市長選挙に出馬するとは驚きですね。"
+        }
+    },
+    {
+        "id": "SRC4VC048-JVNVhappiness_028",
+        "audio_path": "./audio/SRC4VC048/wav-R/JVNVhappiness_028.wav",
+        "original_text": "わぁ、ついに私たちは日本一になった！全国大会での勝利は、長年続いた練習の成果が実ったことを証明しているよ。",
+        "model_outputs": {
+            "whisper": "ああついに私たちは日本一になった全国大会での勝利は長年続けた練習のせいから実ったことを証明しているよ",
+            "reazon": "ああついに私たちは日本一になった全国大会での勝利は長年続けた練習の生から実ったことを証明しているよ"
+        }
+    },
+    {
+        "id": "SRC4VC024-JVNVfear_001",
+        "audio_path": "./audio/SRC4VC024/wav-R/JVNVfear_001.wav",
+        "original_text": "うわ、地震だ！早く逃げろ！",
+        "model_outputs": {
+            "whisper": "으아!망원!지신입니다!아이고이대로!",
+            "gemini": "美味い！旨い！最高に美味い！"
+        }
+    },
+    {
+        "id": "SRC4VC031-RECITATION_105",
+        "audio_path": "./audio/SRC4VC031/wav-R/RECITATION_105.wav",
+        "original_text": "連中はリビングでぺちゃくちゃ喋って、警戒していない。",
+        "model_outputs": {
+            "whisper": "連中はリビングでぺちゃぺちゃ喋って警戒していない",
+            "reazon": "連中はリビングでぺちゃくちゃしゃべって警戒していない"
+        }
+    },
+    {
+        "id": "SRC4VC051-JVNVanger_017",
+        "audio_path": "./audio/SRC4VC051/wav-R/JVNVanger_017.wav",
+        "original_text": "はぁ？無駄遣いばかりして何が楽しいの？金を大事にしろよ。",
+        "model_outputs": {
+            "whisper": "はあ無駄遣いばかりして何が楽しいの金を大事にしろよ",
+            "reazon": "はあむだづかいばかりして何が楽しいの金を大事にしろよ"
+        }
+    },
+    {
+        "id": "SRC4VC025-JVNVhappiness_023",
+        "audio_path": "./audio/SRC4VC025/wav-R/JVNVhappiness_023.wav",
+        "original_text": "よし、彼女は一生懸命勉強して、ついに大学に合格したんだ！彼女の頑張りが報われて、とても嬉しいよ！",
+        "model_outputs": {
+            "whisper": "よし、彼女は一生懸命勉強してついに大学に合格したんだ彼女の頑張りが報われてとても嬉しいよ",
+            "gemini": "よし。彼女が一生懸命勉強して、ついに大学に合格したんだ。彼女の頑張りが報われた、とても嬉しいよ。"
+        }
+    },
+    {
+        "id": "SRC4VC017-JVNVdisgust_007",
+        "audio_path": "./audio/SRC4VC017/wav-R/JVNVdisgust_007.wav",
+        "original_text": "うわ、あんな醜悪な顔をしていたら誰も近寄ってきませんよ。",
+        "model_outputs": {
+            "whisper": "うわあんな白くな顔していたら誰も使うてきませんよ",
+            "gemini": "うわあ、あんな赤ら顔してたら、誰も近づいてきませんよ。"
+        }
+    },
+    {
+        "id": "SRC4VC006-RECITATION_102",
+        "audio_path": "./audio/SRC4VC006/wav-R/RECITATION_102.wav",
+        "original_text": "可愛い華奢な女の子。",
+        "model_outputs": {
+            "reazon": "かわいいきゃしゃな女の子",
+            "gemini": "可愛いキャシャな女の子"
+        }
+    },
+    {
+        "id": "SRC4VC067-JVNVfear_005",
+        "audio_path": "./audio/SRC4VC067/wav-R/JVNVfear_005.wav",
+        "original_text": "ぎゃあ！放射性物質が漏出していると聞いて、周りの人々は一斉にパニックに陥った。",
+        "model_outputs": {
+            "reazon": "放射性物質が漏出していると聞いて周りの人々は一斉にパニックに陥った",
+            "gemini": "ギャー！放射性物質が流出していると聞いて、周りの人々は一斉にパニックに陥った。"
+        }
+    },
+    {
+        "id": "SRC4VC062-JVNVsurprise_034",
+        "audio_path": "./audio/SRC4VC062/wav-R/JVNVsurprise_034.wav",
+        "original_text": "わお！あのゲームの攻略法を知っているんですか？すごい！",
+        "model_outputs": {
+            "whisper": "わおあのゲームの攻略を知ってるんですかすごい",
+            "gemini": "うわお。あのゲームの攻略を知ってるのですか？すごい。"
+        }
+    },
+    {
+        "id": "SRC4VC035-JVNVfear_005",
+        "audio_path": "./audio/SRC4VC035/wav-R/JVNVfear_005.wav",
+        "original_text": "ぎゃあ！放射性物質が漏出していると聞いて、周りの人々は一斉にパニックに陥った。",
+        "model_outputs": {
+            "whisper": "きゃあ放射性物質が浪出していると聞いて周りの人々は一斉にパニックに陥った",
+            "reazon": "放射性物質が漏出していると聞いて周りの人々は一斉にパニックに陥った"
+        }
+    },
+    {
+        "id": "SRC4VC013-JVNVhappiness_027",
+        "audio_path": "./audio/SRC4VC013/wav-R/JVNVhappiness_027.wav",
+        "original_text": "わぁ、お客様からとても感謝の言葉をもらったよ！私たちのサービスがお客様にとって役に立っていると知って、とっても嬉しい！",
+        "model_outputs": {
+            "whisper": "わぁお客様からとても感謝の言葉をもらったよ私たちのサービスがお客様にとって役に立っているとしてとっても嬉しい",
+            "reazon": "わお客様からとても感謝の言葉をもらったよ私たちのサービスがお客様にとって役に立っていると知ってとってもうれしい"
+        }
+    },
+    {
+        "id": "SRC4VC048-RECITATION_146",
+        "audio_path": "./audio/SRC4VC048/wav-R/RECITATION_146.wav",
+        "original_text": "釣竿を肩にかけた処士あり。",
+        "model_outputs": {
+            "whisper": "釣竿を肩にかけた書紙あり",
+            "gemini": "尻尾を肩にかけた書士あり"
+        }
+    },
+    {
+        "id": "SRC4VC080-JVNVhappiness_030",
+        "audio_path": "./audio/SRC4VC080/wav-R/JVNVhappiness_030.wav",
+        "original_text": "わーい、今日のディナーはとっても美味しかった！お腹いっぱいで満足だよ！",
+        "model_outputs": {
+            "reazon": "今日のディナーはとってもおいしかったおなかいっぱいで満足だよ",
+            "gemini": "わーい！今日のディナーはとっても美味しかった！お腹いっぱいでも満足だよ！"
+        }
+    },
+    {
+        "id": "SRC4VC088-JVNVsurprise_016",
+        "audio_path": "./audio/SRC4VC088/wav-R/JVNVsurprise_016.wav",
+        "original_text": "ええ、彼は本当にジャマイカに行くんですか？私も行ってみたいです。",
+        "model_outputs": {
+            "reazon": "えっ彼は本当にジャマイカに行くんですか私も行ってみたいです",
+            "gemini": "彼は本当にジャマイカに行くのですか？私も行ってみたいです！"
+        }
+    },
+    {
+        "id": "SRC4VC026-JVNVdisgust_008",
+        "audio_path": "./audio/SRC4VC026/wav-R/JVNVdisgust_008.wav",
+        "original_text": "うわ、あの人の妄想に巻き込まれたくない。一緒にいると気持ち悪い。",
+        "model_outputs": {
+            "whisper": "うわ、あの人の妄想にも来た。巻き込まれたくない。一緒にいると気持ち悪い。",
+            "reazon": "うわあの人の妄想に巻き込まれたくない一緒にいると気持ち悪い"
+        }
+    },
+    {
+        "id": "SRC4VC027-RECITATION_058",
+        "audio_path": "./audio/SRC4VC027/wav-R/RECITATION_058.wav",
+        "original_text": "客人をもてなすのは当然です。",
+        "model_outputs": {
+            "whisper": "逆順をもてなすのは当然です",
+            "gemini": "客人を迎えるのは当然です。"
+        }
+    },
+    {
+        "id": "SRC4VC069-JVNVsurprise_025",
+        "audio_path": "./audio/SRC4VC069/wav-R/JVNVsurprise_025.wav",
+        "original_text": "へぇ、あの人が映画のオーディションを受けることになったんだって！",
+        "model_outputs": {
+            "whisper": "へぇ、あの人がネガノオーディションを来ることになったんだって",
+            "reazon": "へえあの人がMEGAのオーディションを受けることになったんだって"
+        }
+    },
+    {
+        "id": "SRC4VC058-JVNVanger_017",
+        "audio_path": "./audio/SRC4VC058/wav-R/JVNVanger_017.wav",
+        "original_text": "はぁ？無駄遣いばかりして何が楽しいの？金を大事にしろよ。",
+        "model_outputs": {
+            "whisper": "は?無駄ぞかえばかりして何が楽しいの?金を大事にしろよ",
+            "reazon": "無駄遣いばっかりして何が楽しいの金を大事にしろよ"
+        }
+    },
+    {
+        "id": "SRC4VC046-JVNVanger_011",
+        "audio_path": "./audio/SRC4VC046/wav-R/JVNVanger_011.wav",
+        "original_text": "こら！野蛮な言葉遣いはやめなさい。人を傷つけることに何の意味があるのか。",
+        "model_outputs": {
+            "reazon": "こら野蛮な言葉遣いはやめなさい人を傷つけることになんの意味があるのか",
+            "gemini": "ほら、野蛮な言葉遣いはやめなさい。人を傷つけることに、何の意味があるのか。"
+        }
+    },
+    {
+        "id": "SRC4VC046-CALLS_119",
+        "audio_path": "./audio/SRC4VC046/wav-R/CALLS_119.wav",
+        "original_text": "商品の在庫が確保出来たんですか！嬉しいです。",
+        "model_outputs": {
+            "reazon": "商品の在庫が確保できたんですがうれしいです",
+            "gemini": "消費の在庫が確保できたんですか？嬉しいです。"
+        }
+    },
+    {
+        "id": "SRC4VC083-JVNVhappiness_029",
+        "audio_path": "./audio/SRC4VC083/wav-R/JVNVhappiness_029.wav",
+        "original_text": "わーい、私の代表作が出版されたよ！これで私の作品がたくさんの人に読まれるんだ！",
+        "model_outputs": {
+            "whisper": "わーい私の伝票作が出版されたよこれで私の作品がたくさんの人に読まれるんだ",
+            "reazon": "私の代表作が出版されたよこれで私の作品がたくさんの人に読まれるんだ"
+        }
+    },
+    {
+        "id": "SRC4VC017-RECITATION_042",
+        "audio_path": "./audio/SRC4VC017/wav-R/RECITATION_042.wav",
+        "original_text": "指をくわえてぴゅーと一声口笛を吹いた。",
+        "model_outputs": {
+            "reazon": "指をくわえてピュとひと声口笛を吹いた",
+            "gemini": "指をくわえてピューッと一喝、口笛を吹いた。"
+        }
+    },
+    {
+        "id": "SRC4VC030-CALLS_079",
+        "audio_path": "./audio/SRC4VC030/wav-R/CALLS_079.wav",
+        "original_text": "観光地のおみやげって，中身がわからないから購入に悩むんだよね。",
+        "model_outputs": {
+            "whisper": "ゴーチのお土産って中身がわからないから購入に悩むんだよね。",
+            "reazon": "高知のお土産って中身が分からないから購入に悩むんだよね"
+        }
+    },
+    {
+        "id": "SRC4VC093-RECITATION_151",
+        "audio_path": "./audio/SRC4VC093/wav-R/RECITATION_151.wav",
+        "original_text": "薄月の光が庭を照らす。",
+        "model_outputs": {
+            "reazon": "薄づきの光が庭を照らす",
+            "gemini": "薄明の光が庭を照らす"
+        }
+    },
+    {
+        "id": "SRC4VC057-JVNVdisgust_012",
+        "audio_path": "./audio/SRC4VC057/wav-R/JVNVdisgust_012.wav",
+        "original_text": "おえ！あの鼠がまた出た！その汚らしい尻尾を見るだけで、私の背筋が凍りつく。",
+        "model_outputs": {
+            "whisper": "ほえ、あのネズミがまた出た。その汚れしい尻尾を見るだけで私の背筋が凍りつく。",
+            "gemini": "おえー。あのネズミがまた出た！あんな汚らしい尻尾を見るだけで、私の背筋が凍りつく！"
+        }
+    },
+    {
+        "id": "SRC4VC047-JVNVhappiness_030",
+        "audio_path": "./audio/SRC4VC047/wav-R/JVNVhappiness_030.wav",
+        "original_text": "わーい、今日のディナーはとっても美味しかった！お腹いっぱいで満足だよ！",
+        "model_outputs": {
+            "whisper": "はい今日のディナーはとっても美味しかったお腹いっぱいでまずくだよ",
+            "reazon": "はい今日のディナーはとってもおいしかったおなかいっぱいで満足だよ"
+        }
+    },
+    {
+        "id": "SRC4VC096-JVNVsurprise_015",
+        "audio_path": "./audio/SRC4VC096/wav-R/JVNVsurprise_015.wav",
+        "original_text": "ええ、この本が本当に６００円で買えるんですか？安すぎますね！",
+        "model_outputs": {
+            "reazon": "えこの本が本当に六百円で買えるんですか安すぎますね",
+            "gemini": "この本が本当に600円で買えるのですか？安すぎますね。"
+        }
+    },
+    {
+        "id": "SRC4VC059-JVNVsadness_009",
+        "audio_path": "./audio/SRC4VC059/wav-R/JVNVsadness_009.wav",
+        "original_text": "えーん、この病気が治る見込みがないと聞いて、絶望的な気持ちでいっぱいです。",
+        "model_outputs": {
+            "whisper": "えんこの病気が治る見込みがないと聞いて絶望的な気持ちでいっぱいです",
+            "reazon": "この病気が治る見込みがないと聞いて絶望的な気持ちでいっぱいです"
+        }
+    },
+    {
+        "id": "SRC4VC095-RECITATION_142",
+        "audio_path": "./audio/SRC4VC095/wav-R/RECITATION_142.wav",
+        "original_text": "深海魚は見た目は悪いがおいしいことが多い。",
+        "model_outputs": {
+            "whisper": "深海魚は見た目は悪いがおいしいことが多い",
+            "gemini": "深海魚は見た目は悪いが、美味しいことが多い。"
+        }
+    },
+    {
+        "id": "SRC4VC025-JVNVsurprise_020",
+        "audio_path": "./audio/SRC4VC025/wav-R/JVNVsurprise_020.wav",
+        "original_text": "おっと、この会場のキャパシティーは500人だったのに、もう600人以上も入ってるよ！",
+        "model_outputs": {
+            "whisper": "おっと、この会場のキャパシティは500人だったのに、もう620人も入ってるよ。",
+            "gemini": "おっと、この会場、客席が500人だったのに、600人以上も入ってるよ。"
+        }
+    },
+    {
+        "id": "SRC4VC084-JVNVhappiness_006",
+        "audio_path": "./audio/SRC4VC084/wav-R/JVNVhappiness_006.wav",
+        "original_text": "うおー、今日は海で泳ぐのが本当に気持ちがいい！さっきまで暑かったのに、海に入ったら涼しい風が吹いて最高だったよ。",
+        "model_outputs": {
+            "reazon": "うお今日は海で泳ぐのが本当に気持ちがいいさっきまで暑かったのに海に入ったら涼しい風が吹いて最高だったよ",
+            "gemini": "今日は海で泳ぐのが本当に気持ちが良かった。さっきまで暑かったのに、海に入ったら涼しい風が吹いて最高だったよ。"
         }
     },
     {
@@ -432,111 +711,192 @@
         }
     },
     {
-        "id": "SRC4VC057-JVNVfear_009",
-        "audio_path": "./audio/SRC4VC057/wav-R/JVNVfear_009.wav",
-        "original_text": "ひい、街の抗争が激化して、いつ自分が巻き込まれるか分からない。",
+        "id": "SRC4VC085-JVNVhappiness_016",
+        "audio_path": "./audio/SRC4VC085/wav-R/JVNVhappiness_016.wav",
+        "original_text": "はは、今日の運動会は楽しかったね！特にリレーの時はみんなが協力して走ってくれたから、最高の思い出になったよ。",
         "model_outputs": {
-            "reazon": "街の構造が激化していつ自分が巻き込まれるか分からない",
-            "gemini": "街の騒音が気になり、いつ地震が巻き込まれるか分からない。"
+            "whisper": "はは今日の運動会は楽しかったね特に例の時はみんなが協力して走ってくれたから最高の思い出になったよ",
+            "reazon": "ハハ今日の運動会は楽しかったねとくにリレーのときはみんなが協力して走ってくれたからさいこうの思い出になったよ"
         }
     },
     {
-        "id": "SRC4VC079-RECITATION_034",
-        "audio_path": "./audio/SRC4VC079/wav-R/RECITATION_034.wav",
-        "original_text": "ここで一緒にウェイクフィールドの叔母を待った。",
+        "id": "SRC4VC100-JVNVfear_013",
+        "audio_path": "./audio/SRC4VC100/wav-R/JVNVfear_013.wav",
+        "original_text": "わあ、昨日夜中に家の前でストーカーがいたんです！怖くて一晩中眠れませんでした。",
         "model_outputs": {
-            "whisper": "ここで一緒にウェイクフィールドのおばを待った",
-            "reazon": "ここで一緒にフェイクフィールドの叔母を待った"
+            "reazon": "わあ昨日夜中に家の前でストーカーがいたんです怖くてもう一晩中眠れませんでした",
+            "gemini": "うわあ。きのう夜中に家の前でストーカーがいたんです。怖くてもう一晩中眠れませんでした。"
         }
     },
     {
-        "id": "SRC4VC038-JVNVsurprise_031",
-        "audio_path": "./audio/SRC4VC038/wav-R/JVNVsurprise_031.wav",
-        "original_text": "わあ、あの人はあんなに信仰心が厚かったんですか？驚きました。",
+        "id": "SRC4VC071-JVNVhappiness_020",
+        "audio_path": "./audio/SRC4VC071/wav-R/JVNVhappiness_020.wav",
+        "original_text": "今日はスーパーで買い物したら、予想外にキャッシュバックがもらえたんだ！へへ、ラッキー！",
         "model_outputs": {
-            "whisper": "わああの人はあんなに信仰心が厚かったんですか驚きました",
-            "reazon": "わあの人はあんなに信仰心が厚かったんですか驚きました"
+            "whisper": "今日はスーパーで買い物したら予想外にキャッシュバッグをもらえたんだ。ラッキー。",
+            "reazon": "今日はスーパーで買い物したら予想外にキャッシュバックがもらえたんだヘヘラッキー"
         }
     },
     {
-        "id": "SRC4VC014-JVNVsurprise_034",
-        "audio_path": "./audio/SRC4VC014/wav-R/JVNVsurprise_034.wav",
-        "original_text": "わお！あのゲームの攻略法を知っているんですか？すごい！",
+        "id": "SRC4VC042-JVNVdisgust_011",
+        "audio_path": "./audio/SRC4VC042/wav-R/JVNVdisgust_011.wav",
+        "original_text": "おえ、二日酔いって本当に最悪ですね。頭が痛くて、吐き気がして、体がだるくて、食欲もない。",
         "model_outputs": {
-            "reazon": "わあのゲームの攻略法を知っているんですかすごい",
-            "gemini": "あのゲームの攻略を知っているのですか？すごい！"
+            "reazon": "おや二日酔いって本当に最悪ですね頭が痛くて吐き気がして体がだるくて食欲もない",
+            "gemini": "二日酔いで本当に最悪ですね。頭が痛くて吐き気がして、体がダルくて食欲もない。"
         }
     },
     {
-        "id": "SRC4VC027-CALLS_144",
-        "audio_path": "./audio/SRC4VC027/wav-R/CALLS_144.wav",
-        "original_text": "１か月前にそちらで予約させていただいたホテル、とても素敵でした。",
+        "id": "SRC4VC037-JVNVfear_006",
+        "audio_path": "./audio/SRC4VC037/wav-R/JVNVfear_006.wav",
+        "original_text": "ぎゃあ、あの恐るべき巨大な竜巻が私たちの方に向かって来ています！早く避難しましょう！",
         "model_outputs": {
-            "whisper": "1ヶ月前にそちらで予約させていただいたホテルとても素敵でした",
-            "gemini": "1ヶ月前にそちらで予約させて頂いたホテル、とても素敵でした。"
+            "reazon": "キャあの恐るべき巨大な竜巻が私たちの方に向かってきています早く避難しましょう",
+            "gemini": "あの恐るべき巨大な竜巻が、私たちの方に向かってきています。早く避難しましょう。"
         }
     },
     {
-        "id": "SRC4VC041-RECITATION_034",
-        "audio_path": "./audio/SRC4VC041/wav-R/RECITATION_034.wav",
-        "original_text": "ここで一緒にウェイクフィールドの叔母を待った。",
+        "id": "SRC4VC093-JVNVsurprise_027",
+        "audio_path": "./audio/SRC4VC093/wav-R/JVNVsurprise_027.wav",
+        "original_text": "ほう、あの会社のシェアがこんなに伸びたとは驚きですね。",
         "model_outputs": {
-            "whisper": "ここで一緒にウェイクフィールドのお場を待った",
-            "gemini": "ここで一緒にウェイクフィールドの婆を待った。"
+            "whisper": "おーあの会社のセアがこんなに伸びたったら驚きですね",
+            "gemini": "あの会社の勢いがこんなに伸びたのは驚きですね。"
         }
     },
     {
-        "id": "SRC4VC003-JVNVdisgust_005",
-        "audio_path": "./audio/SRC4VC003/wav-R/JVNVdisgust_005.wav",
+        "id": "SRC4VC007-JVNVfear_013",
+        "audio_path": "./audio/SRC4VC007/wav-R/JVNVfear_013.wav",
+        "original_text": "わあ、昨日夜中に家の前でストーカーがいたんです！怖くて一晩中眠れませんでした。",
+        "model_outputs": {
+            "whisper": "わあ昨日夜中に家の前でストーカーがいたんです怖くて一晩中眠れませんでした",
+            "reazon": "わぁ昨日夜中に家の前でストーカーがいたんです怖くて一晩中眠れませんでした"
+        }
+    },
+    {
+        "id": "SRC4VC015-JVNVhappiness_027",
+        "audio_path": "./audio/SRC4VC015/wav-R/JVNVhappiness_027.wav",
+        "original_text": "わぁ、お客様からとても感謝の言葉をもらったよ！私たちのサービスがお客様にとって役に立っていると知って、とっても嬉しい！",
+        "model_outputs": {
+            "reazon": "うわお客様からとても感謝の言葉をもらったよ私たちのサービスがお客様にとって役に立っていると知ってとってもうれしい",
+            "gemini": "お客様からとても感謝の言葉を貰ってよ。私たちのサービスがお客様にとって役に立っていると知って、とても嬉しい。"
+        }
+    },
+    {
+        "id": "SRC4VC060-RECITATION_238",
+        "audio_path": "./audio/SRC4VC060/wav-R/RECITATION_238.wav",
+        "original_text": "社販で巨富を築くという、彼の目論見は途中でへし折られた。",
+        "model_outputs": {
+            "whisper": "社犯で虚布を築くという彼の目論みは途中でへし折られた",
+            "gemini": "社判で拠点を築くと彼の目論見は途中で挫かれた。"
+        }
+    },
+    {
+        "id": "SRC4VC043-RECITATION_214",
+        "audio_path": "./audio/SRC4VC043/wav-R/RECITATION_214.wav",
+        "original_text": "乳牛を見ながら、レテュの入ったピッツァを食べる。",
+        "model_outputs": {
+            "whisper": "乳牛を見ながらレチュの入ったピッザを食べる",
+            "reazon": "乳牛を見ながらレジの入ったピッツァを食べる"
+        }
+    },
+    {
+        "id": "SRC4VC053-JVNVsadness_009",
+        "audio_path": "./audio/SRC4VC053/wav-R/JVNVsadness_009.wav",
+        "original_text": "えーん、この病気が治る見込みがないと聞いて、絶望的な気持ちでいっぱいです。",
+        "model_outputs": {
+            "whisper": "レーン、この病気が治る見込みがないと聞いて、絶望的な気持ちでいっぱいです。",
+            "gemini": "この病気が治る見込みがないと聞いて、絶望的な気持ちでいっぱいです。"
+        }
+    },
+    {
+        "id": "SRC4VC093-JVNVsadness_014",
+        "audio_path": "./audio/SRC4VC093/wav-R/JVNVsadness_014.wav",
+        "original_text": "はぁー、あの人が亡くなったという悲報を聞いて、心が痛くなった。",
+        "model_outputs": {
+            "reazon": "はあの人が亡くなったという悲報を聞いて俺が痛くなった",
+            "gemini": "あのひとが亡くなったという知らせを聞いて、心が痛くなった。"
+        }
+    },
+    {
+        "id": "SRC4VC022-RECITATION_102",
+        "audio_path": "./audio/SRC4VC022/wav-R/RECITATION_102.wav",
+        "original_text": "可愛い華奢な女の子。",
+        "model_outputs": {
+            "whisper": "可愛いキャサな女の子",
+            "reazon": "かわいいきゃしゃな女の子"
+        }
+    },
+    {
+        "id": "SRC4VC087-JVNVfear_011",
+        "audio_path": "./audio/SRC4VC087/wav-R/JVNVfear_011.wav",
+        "original_text": "ひえ、テロリズムが蔓延する世界で生きることが怖くて何もできない。",
+        "model_outputs": {
+            "whisper": "いいえ、テロリズムが蔓延する世界で生きることが怖くて何もできない",
+            "reazon": "いいえテロリズムがまん延する世界で生きる事が怖くて何もできない"
+        }
+    },
+    {
+        "id": "SRC4VC055-RECITATION_224",
+        "audio_path": "./audio/SRC4VC055/wav-R/RECITATION_224.wav",
+        "original_text": "根本と曽原は主君を批判した。",
+        "model_outputs": {
+            "whisper": "眠くと曽原は主君を記載した。",
+            "reazon": "眠くソハラは主君を批判した"
+        }
+    },
+    {
+        "id": "SRC4VC082-JVNVhappiness_014",
+        "audio_path": "./audio/SRC4VC082/wav-R/JVNVhappiness_014.wav",
+        "original_text": "おお！私はついに英語の資格試験に合格して、認定されたよ！これで英語がもっと話せるようになるぞ。",
+        "model_outputs": {
+            "reazon": "お私はついに英語の資格試験に合格して認定されたよこれで英語がもっと話せるようになるぞ",
+            "gemini": "私はついに英語の資格試験に合格して認定されたよ。これで英語がもっと話せるようになるぞ！"
+        }
+    },
+    {
+        "id": "SRC4VC010-JVNVsadness_002",
+        "audio_path": "./audio/SRC4VC010/wav-R/JVNVsadness_002.wav",
+        "original_text": "あーあ、毎日残業が続いて疲れるばかりで、家族と過ごす時間も減ってしまって、悲しい気持ちでいっぱいです。",
+        "model_outputs": {
+            "whisper": "ああ、毎日残業が続いて疲れるばかりで家族と過ごす時間も減ってしまって悲しい気持ちでいっぱいです",
+            "gemini": "毎日残業が続いて疲れるばかりで、家族と過ごす時間も減ってしまって悲しい気持ちでいっぱいです。"
+        }
+    },
+    {
+        "id": "SRC4VC040-RECITATION_199",
+        "audio_path": "./audio/SRC4VC040/wav-R/RECITATION_199.wav",
+        "original_text": "絵葉書と一緒に銀色のルアーをマッシュに送った。",
+        "model_outputs": {
+            "whisper": "絵はがきと一緒に銀色のルアーをマッシュに送った",
+            "gemini": "絵葉書と一緒に銀色のルアーをマシューに送った。"
+        }
+    },
+    {
+        "id": "SRC4VC026-JVNVfear_003",
+        "audio_path": "./audio/SRC4VC026/wav-R/JVNVfear_003.wav",
+        "original_text": "夜の森で、人を食ったと噂される熊に出くわした！きゃあ、助けてください！",
+        "model_outputs": {
+            "reazon": "夜の森で人を食ったと渡され熊が出たって食わしたキャ助けてください",
+            "gemini": "夜の森で人喰ったと言われる熊が出たっていう噂を聞いた。きゃー！助けてください！"
+        }
+    },
+    {
+        "id": "SRC4VC056-JVNVanger_021",
+        "audio_path": "./audio/SRC4VC056/wav-R/JVNVanger_021.wav",
+        "original_text": "もう！君がいつもそんなに無茶をするから、体を痛めるんだよ。反省しなさい！",
+        "model_outputs": {
+            "whisper": "もう君がいつもそんなに無茶をするから体を痛めるんだよ反省しなさい",
+            "gemini": "君がいつもそんなに無茶をするから体を痛めるんだよ。反省しなさい。"
+        }
+    },
+    {
+        "id": "SRC4VC005-JVNVdisgust_005",
+        "audio_path": "./audio/SRC4VC005/wav-R/JVNVdisgust_005.wav",
         "original_text": "うぇ、また水漏れが起きている。この湿気とカビ臭い匂いは本当に嫌だ。",
         "model_outputs": {
-            "whisper": "うえまた水漏れ起きてるこの湿気とカビの匂いは本当に嫌だ",
-            "reazon": "うえまた水漏れ起きてるこの湿気とカビのにおいは本当に嫌だ"
-        }
-    },
-    {
-        "id": "SRC4VC087-RECITATION_227",
-        "audio_path": "./audio/SRC4VC087/wav-R/RECITATION_227.wav",
-        "original_text": "その義軍は、一ヘクタールほふく前進をした。",
-        "model_outputs": {
-            "whisper": "その義軍は1ヘクタール歩幅前進をした",
-            "gemini": "その義軍は1ヘクタール補給前進をした。"
-        }
-    },
-    {
-        "id": "SRC4VC063-JVNVanger_010",
-        "audio_path": "./audio/SRC4VC063/wav-R/JVNVanger_010.wav",
-        "original_text": "このー！いくら争っても仕方がないと思わないか？和解しなさい。",
-        "model_outputs": {
-            "reazon": "いくら争ってもしかたがないと思わないか和解しなさい",
-            "gemini": "いくら争っても仕方がないと思わないか？馬鹿にしなさい！"
-        }
-    },
-    {
-        "id": "SRC4VC094-JVNVsurprise_019",
-        "audio_path": "./audio/SRC4VC094/wav-R/JVNVsurprise_019.wav",
-        "original_text": "おっと、あの方が乗っているのは人力車ですか？こんなに現代的な街で見かけるなんて意外ですね。",
-        "model_outputs": {
-            "reazon": "おっとあの方が乗っているのは人力車ですかこんなに現代的な街で見かけるなんて意外ですね",
-            "gemini": "おっと。あの方が乗っているのは人力車ですか？こんなに現代的な街で人力車なんて意外ですね。"
-        }
-    },
-    {
-        "id": "SRC4VC027-JVNVhappiness_032",
-        "audio_path": "./audio/SRC4VC027/wav-R/JVNVhappiness_032.wav",
-        "original_text": "ヤッホー！今日の天気、ちょうどいい感じだね！風も涼しくて最高！一緒に散歩しよう。",
-        "model_outputs": {
-            "reazon": "今日の天気ちょうどいい感じだね風も涼しくて最高一緒に散歩しよう",
-            "gemini": "ヤッホー！今日の天気ちょうどいい感じだね。肌も涼しくて最高！一緒に散歩しよう！"
-        }
-    },
-    {
-        "id": "SRC4VC038-RECITATION_066",
-        "audio_path": "./audio/SRC4VC038/wav-R/RECITATION_066.wav",
-        "original_text": "宇宙では、エントロピーは無際限に増大している。",
-        "model_outputs": {
-            "whisper": "宇宙ではエントロピーは無再現に増大している",
-            "gemini": "不均一ではエントロピーは無制限に増大している。"
+            "whisper": "上、まだ水漏れが起きている。この湿気とカビ臭い匂いは本当に嫌だ。",
+            "reazon": "うえまだ水漏れが起きているこの湿気とカビ臭いにおいはほんとうに嫌だ"
         }
     }
 ]
